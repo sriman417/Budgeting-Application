@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="box box-left">
+        <h2>Credit</h2>
+        <div class="form-group">
+          <label for="credit-amount">Credit Amount:</label>
+          <input
+            type="number"
+            id="credit-amount"
+            class="form-control"
+            [(ngModel)]="amount"
+            placeholder="Enter credit amount"
+            min="0"/>
+        </div>
+      
+        <div class="form-group">
+          <label for="recurrence-type">Recurrence Type:</label>
+          <select
+            id="recurrence-type"
+            class="form-control"
+            [(ngModel)]="recurrenceType">
+            <option value="" disabled>Select Recurrence Type</option>
+            <option value="one-time">One-time</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="yearly">Yearly</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" (click)="addCredit()">Add Credit</button>
+      </div>
+    </div>
+  </div>
+</div>
+  

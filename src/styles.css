@@ -1,0 +1,106 @@
+/* Global styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.col {
+  flex: 1;
+}
+
+/* Boxes with different colors */
+.box {
+  padding: 20px;
+  border-radius: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box-left {
+  background-color: #f8d7da; /* Light Red */
+  color: #721c24; /* Darker text for contrast */
+}
+
+.box-right {
+  background-color: #d4edda; /* Light Green */
+  color: #155724; /* Darker text for contrast */
+}
+
+.box-full {
+  background-color: #cce5ff; /* Light Blue */
+  color: #004085; /* Darker text for contrast */
+}
+
+/* Content section */
+.content {
+  margin-top: 20px;
+}
+
+/* Cards */
+.card {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff; /* White background */
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333; /* Dark text */
+}
+
+/* List group items */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa; /* Light gray */
+}
+
+.item-description {
+  font-weight: bold;
+  margin-right: 15px;
+  color: #333; /* Dark text */
+}
+
+.item-amount {
+  color: #28a745; /* Green for amount */
+  font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Red */
+  border-color: #dc3545;
+  color: #fff; /* White text */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Blue */
+  border-color: #007bff;
+  color: #fff; /* White text */
+}

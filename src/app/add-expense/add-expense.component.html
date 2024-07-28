@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col">
+    <div class="box box-left">
+      <h2>Debit</h2>
+      <div class="add-expense">
+        <div class="card-body">
+          <form (submit)="addExpense()">
+            <div class="form-group">
+              <label for="description">Description</label>
+              <input type="text" class="form-control" id="description" name="description" [(ngModel)]="description">
+            </div>
+            <div class="form-group">
+              <label for="amount">Amount</label>
+              <input type="number" class="form-control" id="amount" name="amount" [(ngModel)]="amount">
+            </div>
+            <div class="form-group">
+              <label for="datetime">Date and Time</label>
+              <input type="datetime-local" class="form-control" id="datetime" name="datetime" [(ngModel)]="dateTime">
+            </div>
+            <div class="form-group">
+              <label for="recurrenceType">Recurrence Type</label>
+              <select class="form-control" id="recurrenceType" name="recurrenceType" [(ngModel)]="recurrenceType">
+                <option value="Daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Expense</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

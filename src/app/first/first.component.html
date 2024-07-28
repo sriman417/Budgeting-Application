@@ -1,0 +1,7 @@
+<div class="container">
+  <app-credit (creditAdded)="addCredit($event)"></app-credit>
+  <app-credit-list [creditItems]="creditItems$ | async"></app-credit-list>
+  <app-add-expense (expenseAdded)="addExpense($event)"></app-add-expense>
+  <app-budget-list [budgetItems]="budgetItems$ | async"></app-budget-list>
+  <button (click)="showResults()" class="btn btn-primary">Show Results</button>
+</div>
